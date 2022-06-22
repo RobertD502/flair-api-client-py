@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hass-flair-api",
-    version="1.1.0",
+    version="1.1.1",
     author="Robert Drinovac",
     author_email="unlisted@gmail.com",
     description="Forked Flair API Client",
