@@ -1,6 +1,6 @@
 import pytest
-from flair_api import make_client
-from flair_api.client import DEFAULT_CLIENT_HEADERS
+from hass_flair_api import make_client
+from hass_flair_api.client import DEFAULT_CLIENT_HEADERS
 import requests_mock
 
 @pytest.fixture
