@@ -16,7 +16,9 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     python_requires= ">=3.6",
     install_requires=[
-        "requests>=2.27.1"
+        "requests>=2.27.1",
+        "requests-mock>=1.5.2",
+        "pytest>=4.3.1"
     ],
     classifiers=(
         "Programming Language :: Python :: 3",
