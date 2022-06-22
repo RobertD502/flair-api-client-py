@@ -1,13 +1,29 @@
-#!/usr/bin/env python
+import setuptools
 
-from setuptools import setup
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-setup(name='flair-client',
-      version='1.0.0',
-      description='Flair API Client',
-      author='Edward Paget',
-      author_email='ed@flair.co',
-      url='https://api.flair.co',
-      packages=['flair_api'],
-      install_requires=['requests']
+setuptools.setup(
+    name="hass-flair-client",
+    version="1.1.0",
+    author="Robert Drinovac",
+    author_email="unlisted@gmail.com",
+    description="Forked Flair API Client",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/RobertD502/flair-api-client-py/tree/hass-flair-api-client',
+    keywords='flair, flair vents, flair api, flair home assistant',
+    packages=setuptools.find_packages(),
+    python_requires= ">=3.6",
+    install_requires=[
+        "requests>=2.27.1"
+    ],
+    classifiers=(
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent"
+    ),
+    project_urls={  # Optional
+    'Source': 'https://github.com/RobertD502/flair-api-client-py/tree/hass-flair-api-client',
+    },
 )
