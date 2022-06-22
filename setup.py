@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="hass-flair-client",
+    name="hass-flair-api",
     version="1.1.0",
     author="Robert Drinovac",
     author_email="unlisted@gmail.com",
